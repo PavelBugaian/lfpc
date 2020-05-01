@@ -44,21 +44,21 @@ RM = /home/bromgard/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/193.6911.21/b
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bromgard/Projects/UTM/sem-1/lfpc/lab1
+CMAKE_SOURCE_DIR = /home/bromgard/Projects/UTM/sem-1/lfpc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bromgard/Projects/UTM/sem-1/lfpc/lab1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/bromgard/Projects/UTM/sem-1/lfpc/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/lab1.dir/all
+all: CMakeFiles/lfpc.dir/all
 
 .PHONY : all
 
 # The main recursive "clean" target.
-clean: CMakeFiles/lab1.dir/clean
+clean: CMakeFiles/lfpc.dir/clean
 
 .PHONY : clean
 
@@ -68,31 +68,31 @@ preinstall:
 .PHONY : preinstall
 
 #=============================================================================
-# Target rules for target CMakeFiles/lab1.dir
+# Target rules for target CMakeFiles/lfpc.dir
 
 # All Build rule for target.
-CMakeFiles/lab1.dir/all:
-	$(MAKE) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/depend
-	$(MAKE) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bromgard/Projects/UTM/sem-1/lfpc/lab1/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target lab1"
-.PHONY : CMakeFiles/lab1.dir/all
+CMakeFiles/lfpc.dir/all:
+	$(MAKE) -f CMakeFiles/lfpc.dir/build.make CMakeFiles/lfpc.dir/depend
+	$(MAKE) -f CMakeFiles/lfpc.dir/build.make CMakeFiles/lfpc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bromgard/Projects/UTM/sem-1/lfpc/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target lfpc"
+.PHONY : CMakeFiles/lfpc.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/lab1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bromgard/Projects/UTM/sem-1/lfpc/lab1/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lab1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bromgard/Projects/UTM/sem-1/lfpc/lab1/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/lab1.dir/rule
+CMakeFiles/lfpc.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bromgard/Projects/UTM/sem-1/lfpc/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lfpc.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bromgard/Projects/UTM/sem-1/lfpc/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/lfpc.dir/rule
 
 # Convenience name for target.
-lab1: CMakeFiles/lab1.dir/rule
+lfpc: CMakeFiles/lfpc.dir/rule
 
-.PHONY : lab1
+.PHONY : lfpc
 
 # clean rule for target.
-CMakeFiles/lab1.dir/clean:
-	$(MAKE) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/clean
-.PHONY : CMakeFiles/lab1.dir/clean
+CMakeFiles/lfpc.dir/clean:
+	$(MAKE) -f CMakeFiles/lfpc.dir/build.make CMakeFiles/lfpc.dir/clean
+.PHONY : CMakeFiles/lfpc.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

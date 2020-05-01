@@ -48,10 +48,10 @@ RM = /home/bromgard/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/193.6911.21/b
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bromgard/Projects/UTM/sem-1/lfpc/lab1
+CMAKE_SOURCE_DIR = /home/bromgard/Projects/UTM/sem-1/lfpc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bromgard/Projects/UTM/sem-1/lfpc/lab1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/bromgard/Projects/UTM/sem-1/lfpc/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bromgard/Projects/UTM/sem-1/lfpc/lab1/cmake-build-debug/CMakeFiles /home/bromgard/Projects/UTM/sem-1/lfpc/lab1/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bromgard/Projects/UTM/sem-1/lfpc/cmake-build-debug/CMakeFiles /home/bromgard/Projects/UTM/sem-1/lfpc/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bromgard/Projects/UTM/sem-1/lfpc/lab1/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bromgard/Projects/UTM/sem-1/lfpc/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named lab1
+# Target rules for targets named lfpc
 
 # Build rule for target.
-lab1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lab1
-.PHONY : lab1
+lfpc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lfpc
+.PHONY : lfpc
 
 # fast build rule for target.
-lab1/fast:
-	$(MAKE) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/build
-.PHONY : lab1/fast
+lfpc/fast:
+	$(MAKE) -f CMakeFiles/lfpc.dir/build.make CMakeFiles/lfpc.dir/build
+.PHONY : lfpc/fast
 
-main.o: main.cpp.o
+lab2/main.o: lab2/main.c.o
 
-.PHONY : main.o
+.PHONY : lab2/main.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/main.cpp.o
-.PHONY : main.cpp.o
+lab2/main.c.o:
+	$(MAKE) -f CMakeFiles/lfpc.dir/build.make CMakeFiles/lfpc.dir/lab2/main.c.o
+.PHONY : lab2/main.c.o
 
-main.i: main.cpp.i
+lab2/main.i: lab2/main.c.i
 
-.PHONY : main.i
+.PHONY : lab2/main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/main.cpp.i
-.PHONY : main.cpp.i
+lab2/main.c.i:
+	$(MAKE) -f CMakeFiles/lfpc.dir/build.make CMakeFiles/lfpc.dir/lab2/main.c.i
+.PHONY : lab2/main.c.i
 
-main.s: main.cpp.s
+lab2/main.s: lab2/main.c.s
 
-.PHONY : main.s
+.PHONY : lab2/main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/main.cpp.s
-.PHONY : main.cpp.s
+lab2/main.c.s:
+	$(MAKE) -f CMakeFiles/lfpc.dir/build.make CMakeFiles/lfpc.dir/lab2/main.c.s
+.PHONY : lab2/main.c.s
 
 # Help Target
 help:
@@ -157,11 +157,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... lab1"
+	@echo "... lfpc"
 	@echo "... edit_cache"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... lab2/main.o"
+	@echo "... lab2/main.i"
+	@echo "... lab2/main.s"
 .PHONY : help
 
 

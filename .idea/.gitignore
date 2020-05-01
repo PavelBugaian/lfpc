@@ -1,2 +1,5 @@
 # Default ignored files
 /workspace.xml
+../.idea
+../cmake-build-debug
+../compiler/VOVAN
