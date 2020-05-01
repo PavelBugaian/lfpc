@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/lfpc.dir/lab2/main.c.o  -o lfpc  -lm 

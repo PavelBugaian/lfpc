@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/bromgard/Projects/UTM/sem-1/lfpc/lab2/main.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+
