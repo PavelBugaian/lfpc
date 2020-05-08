@@ -17,7 +17,6 @@ func New(input string) *Lexer {
 
 }
 
-//check if the tokens exist,default it try to chekc if its a identifier else return null;
 func (lexer *Lexer) NextToken() token.Token {
 
 	var tok token.Token
@@ -221,8 +220,6 @@ func isDigit(ch byte) bool {
 	return '0' <= ch && ch <= '9'
 }
 
-//helper function to work with operators like !=,==,-= etc
-//help us to identify difference between a single sign and where is mroe then one char
 func (lexer *Lexer) peekChar() byte {
 
 	if lexer.readPosition >= len(lexer.input) {

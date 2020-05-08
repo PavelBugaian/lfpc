@@ -8,9 +8,8 @@ import (
 	"main/lexer"
 )
 
-const PROMPT = "<meow>^..^<meow>"
+const PROMPT = ">>"
 
-//helper function for  input and output values
 func Start(in io.Reader, out io.Writer) {
 	scanner := bufio.NewScanner(in)
 
