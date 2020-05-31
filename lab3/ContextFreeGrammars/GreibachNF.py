@@ -1,4 +1,3 @@
-#Vainberg Simion FAF-182 Variant 7
 from ContextFreeGrammars.ChomskyNF import ChomskyNF
 from ContextFreeGrammars.CFG import CFG
 import re
