@@ -1,4 +1,3 @@
-#Vainberg Simion FAF-182 Variant 7
 from itertools import product
 from ContextFreeGrammars.CFG import CFG
 import re
