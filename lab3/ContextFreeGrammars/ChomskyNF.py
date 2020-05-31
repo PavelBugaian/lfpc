@@ -1,4 +1,3 @@
-#Vainberg Simion FAF-182 Variant 7
 from ContextFreeGrammars.GenericNF import GenericNF
 from ContextFreeGrammars.CFG import CFG
 import re
