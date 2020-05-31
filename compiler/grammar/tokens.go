@@ -11,6 +11,7 @@ const (
 	
 	EOF = "EOF"
 	ILLEGAL ="ILLEGAL"//illegal token
+	SEMICOLON = ";"
 	
 	LBRACKET ="["//left bracket
 	RBRACKET ="]"
@@ -49,7 +50,7 @@ const (
 
 
 	FUNCTION = "FUNCTION"//function
-	LET = "LET"
+	LET = "LET"//a useless keyword which I saw in tutorial and it fucking impressed me))
 
 	//Operatos
 	ASIGN = "="
@@ -88,6 +89,7 @@ var keywords = map[string]TokenType{
 	"false":FALSE,
 	"return":RETURN}
 
+//check where a keyword is a token or return identifier if token not present
 func LookUpIdent(ident string) TokenType{
 	if tok, ok := keywords[ident];ok{
 		return tok
