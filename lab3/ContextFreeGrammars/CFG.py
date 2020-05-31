@@ -1,4 +1,3 @@
-#Vainberg Simion FAF-182 Variant 7
 import re
 import sys
 
